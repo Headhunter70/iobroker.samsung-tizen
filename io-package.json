@@ -1,0 +1,46 @@
+{
+  "common": {
+    "name": "samsung-tizen",
+    "version": "0.1.0",
+    "news": {
+      "0.1.0": {
+        "en": "Initial release",
+        "de": "Erste Version"
+      }
+    },
+    "title": "Samsung Tizen TV",
+    "titleLang": {
+      "en": "Samsung Tizen TV",
+      "de": "Samsung Tizen TV"
+    },
+    "desc": {
+      "en": "Control your Samsung Tizen Smart TV",
+      "de": "Steuere deinen Samsung Tizen Smart TV"
+    },
+    "authors": ["Your Name <your@email.com>"],
+    "keywords": ["samsung", "tizen", "tv", "smarthome"],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "src/main.js",
+    "icon": "admin/samsung-tizen.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/YOUR_GITHUB/ioBroker.samsung-tizen/main/admin/samsung-tizen.png",
+    "readme": "https://github.com/YOUR_GITHUB/ioBroker.samsung-tizen/blob/main/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "media",
+    "messagebox": true,
+    "adminUI": {
+      "config": "json"
+    }
+  },
+  "native": {
+    "ip": "",
+    "mac": "",
+    "port": 8001,
+    "name": "ioBroker",
+    "token": "",
+    "pollInterval": 5000
+  },
+  "instanceObjects": []
+}
