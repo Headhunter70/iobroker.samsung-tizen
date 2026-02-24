@@ -1,66 +1,54 @@
 {
-  "type": "tabs",
+  "type": "panel",
   "items": {
-    "tab_connection": {
-      "type": "tab",
-      "label": "Verbindung",
-      "items": {
-        "host": {
-          "type": "text",
-          "label": "IP-Adresse des TVs",
-          "help": "z.B. 192.168.1.100",
-          "xs": 12,
-          "sm": 6
-        },
-        "port": {
-          "type": "number",
-          "label": "Port (Standard: 8002)",
-          "help": "SSL WebSocket Port",
-          "xs": 12,
-          "sm": 6
-        },
-        "macAddress": {
-          "type": "text",
-          "label": "MAC-Adresse (fuer WakeOnLAN)",
-          "help": "Format: AA:BB:CC:DD:EE:FF",
-          "xs": 12,
-          "sm": 6
-        },
-        "appName": {
-          "type": "text",
-          "label": "App-Name (Anzeige am TV)",
-          "help": "Dieser Name wird beim Verbindungsaufbau am TV angezeigt",
-          "xs": 12,
-          "sm": 6
-        },
-        "token": {
-          "type": "text",
-          "label": "Token (automatisch gespeichert)",
-          "help": "Wird beim ersten Verbindungsaufbau automatisch vom TV abgerufen",
-          "xs": 12,
-          "sm": 12
-        }
-      }
+    "host": {
+      "type": "text",
+      "label": "IP-Adresse des TVs",
+      "help": "z.B. 192.168.1.100",
+      "xs": 12,
+      "sm": 6
     },
-    "tab_advanced": {
-      "type": "tab",
-      "label": "Erweitert",
-      "items": {
-        "pollInterval": {
-          "type": "number",
-          "label": "Abfrage-Intervall (Sekunden)",
-          "help": "Wie oft Geraeteinformationen abgefragt werden",
-          "xs": 12,
-          "sm": 6
-        },
-        "reconnectInterval": {
-          "type": "number",
-          "label": "Reconnect-Intervall (Sekunden)",
-          "help": "Wie lange nach einer Trennung gewartet wird",
-          "xs": 12,
-          "sm": 6
-        }
-      }
+    "port": {
+      "type": "number",
+      "label": "Port (Standard: 8002)",
+      "help": "SSL WebSocket Port",
+      "xs": 12,
+      "sm": 6
+    },
+    "macAddress": {
+      "type": "text",
+      "label": "MAC-Adresse (fuer WakeOnLAN)",
+      "help": "Format: AA:BB:CC:DD:EE:FF",
+      "xs": 12,
+      "sm": 6
+    },
+    "appName": {
+      "type": "text",
+      "label": "App-Name (Anzeige am TV)",
+      "help": "Dieser Name wird beim Verbindungsaufbau am TV angezeigt",
+      "xs": 12,
+      "sm": 6
+    },
+    "token": {
+      "type": "text",
+      "label": "Token (automatisch gespeichert)",
+      "help": "Wird beim ersten Verbindungsaufbau automatisch vom TV abgerufen",
+      "xs": 12,
+      "sm": 12
+    },
+    "pollInterval": {
+      "type": "number",
+      "label": "Abfrage-Intervall (Sekunden)",
+      "help": "Wie oft Geraeteinformationen abgefragt werden",
+      "xs": 12,
+      "sm": 6
+    },
+    "reconnectInterval": {
+      "type": "number",
+      "label": "Reconnect-Intervall (Sekunden)",
+      "help": "Wie lange nach einer Trennung gewartet wird",
+      "xs": 12,
+      "sm": 6
     }
   }
 }
