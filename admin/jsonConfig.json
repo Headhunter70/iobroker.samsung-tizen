@@ -1,54 +1,66 @@
 {
-  "type": "panel",
+  "type": "tabs",
   "items": {
-    "_header": {
-      "type": "header",
-      "text": "Samsung Tizen TV – Konfiguration",
-      "size": 4
+    "tab_connection": {
+      "type": "tab",
+      "label": "Verbindung",
+      "items": {
+        "host": {
+          "type": "text",
+          "label": "IP-Adresse des TVs",
+          "help": "z.B. 192.168.1.100",
+          "xs": 12,
+          "sm": 6
+        },
+        "port": {
+          "type": "number",
+          "label": "Port (Standard: 8002)",
+          "help": "SSL WebSocket Port",
+          "xs": 12,
+          "sm": 6
+        },
+        "macAddress": {
+          "type": "text",
+          "label": "MAC-Adresse (fuer WakeOnLAN)",
+          "help": "Format: AA:BB:CC:DD:EE:FF",
+          "xs": 12,
+          "sm": 6
+        },
+        "appName": {
+          "type": "text",
+          "label": "App-Name (Anzeige am TV)",
+          "help": "Dieser Name wird beim Verbindungsaufbau am TV angezeigt",
+          "xs": 12,
+          "sm": 6
+        },
+        "token": {
+          "type": "text",
+          "label": "Token (automatisch gespeichert)",
+          "help": "Wird beim ersten Verbindungsaufbau automatisch vom TV abgerufen",
+          "xs": 12,
+          "sm": 12
+        }
+      }
     },
-    "ip": {
-      "type": "text",
-      "label": "TV IP-Adresse",
-      "help": "z.B. 192.168.1.100",
-      "sm": 12, "md": 6
-    },
-    "mac": {
-      "type": "text",
-      "label": "MAC-Adresse (für WakeOnLAN)",
-      "help": "z.B. AA:BB:CC:DD:EE:FF",
-      "sm": 12, "md": 6
-    },
-    "port": {
-      "type": "number",
-      "label": "WebSocket Port",
-      "defaultValue": 8001,
-      "sm": 12, "md": 4
-    },
-    "name": {
-      "type": "text",
-      "label": "Gerätename (am TV angezeigt)",
-      "defaultValue": "ioBroker",
-      "sm": 12, "md": 4
-    },
-    "pollInterval": {
-      "type": "number",
-      "label": "Abfrageintervall (ms)",
-      "defaultValue": 5000,
-      "sm": 12, "md": 4
-    },
-    "_tokenHeader": {
-      "type": "header",
-      "text": "Authentifizierung",
-      "size": 5
-    },
-    "_tokenHelp": {
-      "type": "staticText",
-      "text": "Beim ersten Start erscheint am TV eine Genehmigungsanfrage. Das Token wird danach automatisch gespeichert."
-    },
-    "token": {
-      "type": "text",
-      "label": "Gespeichertes Token (automatisch befüllt)",
-      "sm": 12
+    "tab_advanced": {
+      "type": "tab",
+      "label": "Erweitert",
+      "items": {
+        "pollInterval": {
+          "type": "number",
+          "label": "Abfrage-Intervall (Sekunden)",
+          "help": "Wie oft Geraeteinformationen abgefragt werden",
+          "xs": 12,
+          "sm": 6
+        },
+        "reconnectInterval": {
+          "type": "number",
+          "label": "Reconnect-Intervall (Sekunden)",
+          "help": "Wie lange nach einer Trennung gewartet wird",
+          "xs": 12,
+          "sm": 6
+        }
+      }
     }
   }
 }
