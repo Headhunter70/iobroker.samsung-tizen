@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "ioBroker adapter to control Samsung Tizen TVs",
   "author": {
-    "name": "Your Name",
-    "email": "your@email.com"
+    "name": "Headhunter70",
+    "email": "gordon.wedler@gmail.com"
   },
   "homepage": "https://github.com/YOUR_GITHUB/ioBroker.samsung-tizen",
   "license": "MIT",
